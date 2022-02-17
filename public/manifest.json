@@ -1,0 +1,9 @@
+{
+  "name": "Aline Balas Gourmet",
+  "short_name": "Aline Balas Gourmet",
+  "theme_color": "#FFF9EF",
+  "background_color": "#FFF9EF",
+  "display": "browser",
+  "scope": "/",
+  "start_url": "/"
+}
