@@ -3,7 +3,7 @@ import { FiMenu } from 'react-icons/fi';
 export default function Header() {
   return (
     <header className="fixed inset-x-0 bg-brown-200">
-      <div className="container mx-auto h-72 flex justify-between items-center">
+      <div className="container mx-auto lg:px-0 px-8 h-72 flex justify-between items-center">
         <nav>
           <a
             className="font-dancingscript text-24 md:text-28 lg:text-32 font-bold text-red-400"
