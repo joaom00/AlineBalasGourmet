@@ -8,6 +8,7 @@ export default function Home() {
         title="Aline Balas Gourmet"
         description="Desde 2016 oferecendo uma experiência gourmet, além do habitual, para as balas de coco"
         url="https://alinebalasgourmet.vercel.app/"
+        image="/static/images/logo/alinebalasgourmet_logo.svg"
       >
         <Header />
       </MetaTags>
