@@ -7,6 +7,7 @@ export default function Home() {
       <MetaTags
         title="Aline Balas Gourmet"
         description="Desde 2016 oferecendo uma experiência gourmet, além do habitual, para as balas de coco"
+        url="https://alinebalasgourmet.vercel.app/"
       >
         <Header />
       </MetaTags>
