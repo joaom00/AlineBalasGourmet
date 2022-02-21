@@ -57,7 +57,7 @@ export default function Header() {
                 onClick={CloseMenu}
               />
 
-              <ul className="md:flex md:gap-12 lg:gap-18 font-comfortaa text-14 md:text-14 lg:text-18 font-bold text-brown-600">
+              <ul className="flex flex-col md:flex-row md:gap-12 lg:gap-18 font-comfortaa text-14 md:text-14 lg:text-18 font-bold text-brown-600">
                 <li className="transition duration-500 hover:text-red-200 cursor-pointer">
                   Home
                 </li>
