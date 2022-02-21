@@ -4,12 +4,21 @@ import { IoIosCloseCircle } from 'react-icons/io';
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
+
   const ToggleMenu = () => {
     setIsOpen(!isOpen);
   };
   const CloseMenu = () => {
     setIsOpen(false);
   };
+
+  if (typeof window !== 'undefined') {
+    window.addEventListener('resize', () => {
+      if (window.innerWidth >= 768) {
+        setIsOpen(false);
+      }
+    });
+  }
 
   return (
     <>
@@ -32,21 +41,23 @@ export default function Header() {
               onClick={ToggleMenu}
             />
 
-            <nav>
+            <nav
+              className={`${
+                isOpen
+                  ? `pl-20 pt-22 h-screen w-6/12 bg-brown-200 absolute left-0 top-0`
+                  : `hidden`
+              }`}
+            >
               <IoIosCloseCircle
-                className="ab right-0 top-0 z-10 md:hidden cursor-pointer"
-                size={32}
+                className={`${
+                  isOpen ? `relative -right-3/4` : `hidden`
+                } relative z-10 md:hidden cursor-pointer`}
+                size={42}
                 color="#F23A3A"
                 onClick={CloseMenu}
               />
 
-              <ul
-                className={`${
-                  isOpen
-                    ? `h-screen w-1/2 absolute left-0 top-0 bg-brown-200`
-                    : `hidden`
-                } md:flex md:gap-12 lg:gap-18 font-comfortaa text-14 md:text-14 lg:text-18 font-bold text-brown-600`}
-              >
+              <ul className="md:flex md:gap-12 lg:gap-18 font-comfortaa text-14 md:text-14 lg:text-18 font-bold text-brown-600">
                 <li className="transition duration-500 hover:text-red-200 cursor-pointer">
                   Home
                 </li>
