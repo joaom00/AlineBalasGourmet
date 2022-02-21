@@ -35,29 +35,35 @@ export default function Header() {
 
           <div>
             <FiMenu
-              className="inline-block md:hidden cursor-pointer"
+              className="inline-block cursor-pointer md:hidden"
               size={24}
               color="#80470F"
               onClick={ToggleMenu}
             />
 
             <nav
-              className={`${
+              className={
                 isOpen
-                  ? `pl-20 pt-22 h-screen w-6/12 bg-brown-200 absolute left-0 top-0`
-                  : `hidden`
-              }`}
+                  ? `h-screen w-6/12 pl-20 pt-22 bg-brown-200 absolute left-0 top-0`
+                  : `inline-block`
+              }
             >
               <IoIosCloseCircle
                 className={`${
-                  isOpen ? `relative -right-3/4` : `hidden`
-                } relative z-10 md:hidden cursor-pointer`}
+                  isOpen ? `relative -right-3/4 z-10 cursor-pointer` : `hidden`
+                }`}
                 size={42}
                 color="#F23A3A"
                 onClick={CloseMenu}
               />
 
-              <ul className="flex flex-col md:flex-row md:gap-12 lg:gap-18 font-comfortaa text-14 md:text-14 lg:text-18 font-bold text-brown-600">
+              <ul
+                className={`${
+                  isOpen
+                    ? `flex flex-col gap-8`
+                    : `hidden md:flex md:flex-row md:gap-12 md:text-14`
+                }  font-comfortaa text-14 lg:text-18 lg:gap-18 font-bold text-brown-600`}
+              >
                 <li className="transition duration-500 hover:text-red-200 cursor-pointer">
                   Home
                 </li>
