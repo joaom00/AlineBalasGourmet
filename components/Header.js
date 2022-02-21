@@ -26,7 +26,7 @@ export default function Header() {
         <div className="container mx-auto px-8 md:px-4 lg:px-0 h-72 flex justify-between items-center">
           <nav>
             <a
-              className="font-dancingscript text-24 md:text-28 lg:text-32 font-bold text-red-400"
+              className="font-dancingscript text-24 select-none md:text-28 lg:text-32 font-bold text-red-400"
               href="#"
             >
               Aline Balas Gourmet
