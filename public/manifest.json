@@ -3,7 +3,7 @@
   "short_name": "Aline Balas Gourmet",
   "theme_color": "#FFF9EF",
   "background_color": "#FFF9EF",
-  "display": "browser",
+  "display": "standalone",
   "scope": "/",
   "start_url": "/"
 }
